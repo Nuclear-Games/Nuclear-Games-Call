@@ -1,0 +1,118 @@
+<html>
+<head>
+  
+  <meta name="viewport" content="width=device-width">
+  <script src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width , initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+  
+    body {
+    background: linear-gradient(180deg,#ff0068,#ff8d00);
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Quicksand' , sans-serif;
+    }
+    video {
+      height: 230px;
+      width: 330px;
+      float: center;
+      border-radius: 15px;
+      background: white;
+    }
+    
+    .leave{
+      width: 150px;
+      height: 45px;
+      font-family: 'Quicksand' ,sans-serif;
+      font-size: 25px;
+      width:  50%;
+      color: red;
+      border: none;
+      background: white;
+    }
+    
+    
+   .video{
+      background: none;
+   }
+   
+    .copy {
+      color: black;
+      background: none;
+      width: 100%;
+      height: 50px;
+    }
+    
+   .urlplace{
+     width: 80%;
+     height: 51px;
+     font-size: 18px;
+     font-family: 'Quicksand' ,sans-serif ;
+   }
+   
+   .copybtn{
+     height: 50px;
+     width: 18%;
+     font-size: 21px;
+     
+   }
+    
+  </style>
+</head>
+
+
+
+<body onload="setUrl()">
+  
+  
+<div class="copy">
+    
+<input type="text" class="urlplace" value="">
+
+<button onclick="getUrl()" class="copybtn">
+   <i class="fas fa-share-nodes"></i>
+</button>
+
+</div>
+  
+  
+  
+<br>
+  
+  
+  <div class="video">
+  
+  <center>
+  <video id="localVideo" autoplay muted></video>
+  </center>
+  
+  <br>
+  
+  <center>
+  <video id="remoteVideo" autoplay></video>
+  </div>
+  </center>
+  
+  <br><br>
+
+<center>
+  
+  <button class="leave" onclick="leave()">
+    <i class="fas fa-phone"></i> 
+    LEAVE
+  </button>
+
+</center>
+
+  <br><br>
+  
+  <script src="script.js"></script>
+</body>
+</html>

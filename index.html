@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <title>
+      CREATE OR JOIN
+  </title>
+  
+    <style type="text/css" media="all">
+      
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+      
+      body{
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        display: flex;
+        background: linear-gradient(#ff006a,#ff8d00);
+        font-family: 'Quicksand' , sans-serif;
+      }
+      
+       .box{
+        border: 2px solid #ccc;
+        background: transparent;
+        
+        padding: 20px;
+        height: max-content;
+       }
+       
+       .query{
+         width: 230px;         
+         height: 40px;
+         text-align: center;
+         border: none;
+         border-radius: 15px;
+         font-family: 'Quicksand' , sans-serif ;
+         
+       }
+       
+       .search{
+         width: 50px;
+         height: 40px;
+         border-radius: 15px;
+         border: none;
+         font-weight: bolder;
+         font-size: 17px;
+       }
+      
+    </style>
+  
+</head>
+
+<body>
+
+
+
+
+<div class="box">
+  
+  
+  <center>
+    <h2 style="color: white;">Nuclear Live</h2>
+  </center>
+
+<hr>
+    <br>
+  
+  
+<input type="url" name="" class="query" value="" placeholder="Create Or Enter The Room Name" required />
+
+
+<button class="search">
+<i class="fas fa-arrow-right"></i>
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<script>
+  
+let query = document.querySelector('.query');
+
+let search = document.querySelector(".search");
+
+  
+search.onclick = function(){
+  let url = 'https://marble-apps.github.io/Marble-Calling/main.html#' + query.value;
+  window.open(url , '_self');
+}
+  
+  
+</script>
+
+</body>
+
+</html>
+
